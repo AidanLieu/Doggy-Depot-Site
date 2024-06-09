@@ -1,0 +1,209 @@
+/* Headings */
+h1 {
+    text-align: center;
+    font-size: 100px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+.profileGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.profile{
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+}
+.profileImage {
+    width: 200px; /* Adjust the width as needed */
+    display: flex;
+    justify-content: center;
+    margin: 0 auto; /* Center the images within their containers */
+}
+
+.profileImage img {
+    max-width: 100%;
+    height: auto;
+    align-self: start;
+}
+
+#teamImg{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: auto;
+    justify-self: center;
+    text-align: center;
+}
+
+.imageDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.bio{
+    width: 300px;
+}
+
+.carousel{
+    position: relative;
+    width: 400px;
+    height: 600;
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.carousel__item{
+  width: 400px;
+  flex-grow: 1;
+  text-align: center;
+  display: none;
+}
+
+.carousel__item--selected{
+    display: flex;
+}
+
+.carousel__nav{
+    width: 100%;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    background-color: #ca9465;
+}
+
+.carousel__button{
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.carousel__button--selected{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.carouselImg{
+    width: 400px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+#carouselCaption{
+    color: #f4f0e0;
+}
+@media screen and (max-width: 920px) {
+    h2 {
+        font-size: 15px;
+        text-decoration: underline;
+    }
+    h1 {
+        font-size: 40px;
+        margin-bottom: 0px;
+    }
+    #contentBlock1 {
+        flex-direction: column;
+        width: 100%;
+        justify-self: center;
+        align-self: center;
+    }
+    .profileImage {
+        width: 100px; /* Adjust the width as needed */
+        display: flex;
+        justify-content: center;
+        margin: 0 auto; /* Center the images within their containers */
+    }
+    .profileGrid {
+        display: grid;
+        gap: 0px;
+        justify-content: center;
+    }
+    .bio{
+        text-align: center;
+        width: 180px;
+        justify-self: center;
+    }
+    #teamImg{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+        height: auto;
+        justify-self: center;
+        text-align: center;
+        align-self: center;
+    }
+
+    .carousel{
+        position: relative;
+        width: 250px;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        border-radius: 5px;
+        align-self: center;
+    }
+    
+    .carousel__item{
+      width: 300px;
+      flex-grow: 1;
+      text-align: center;
+      display: none;
+    }
+    
+    .carousel__item--selected{
+        display: flex;
+    }
+    
+    .carousel__nav{
+        width: 100%;
+        padding: 10px 0;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        text-align: center;
+        background-color: #ca9465;
+    }
+    
+    .carousel__button{
+        width: 8px;
+        height: 8px;
+        display: inline-block;
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 50%;
+        margin: 0 5px;
+        cursor: pointer;
+    }
+    
+    .carousel__button--selected{
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+    
+    .carouselImg{
+        width: 250px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+    .imageDiv{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
